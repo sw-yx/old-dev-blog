@@ -3,6 +3,10 @@
 
 /* Modifications */
 
+body {
+  background-color: #111;
+}
+
 pre.highlight,
 .highlight pre {
   padding: 10px;
