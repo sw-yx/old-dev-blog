@@ -30,3 +30,16 @@ Meb also outlined some details on twitter:
 2. [if there is a better solution for paying on per week basis and utilizing all 150?](https://twitter.com/MebFaber/status/875764528637648897)
 3. [his list of 16 podcasts he definitely listens to](https://twitter.com/MebFaber/status/870686357089165317)
 
+
+---
+
+#Technical choices
+
+There is ideally an admin page to do the assignment uploads and to view (even play) results but that is actually not necessary for the MVP.
+
+I have a few options here:
+- VulcanJS
+- KeystoneJS - dead, sadly
+- Django - unexplored
+- Meteor/base - i am most familiar
+- react-starter-kit
