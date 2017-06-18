@@ -43,3 +43,11 @@ I have a few options here:
 - Django - unexplored
 - Meteor/base - i am most familiar
 - react-starter-kit
+- [allcount](https://allcountjs.com/) - no longer maintained but god damn its good 
+- [Feathers](https://github.com/feathersjs/feathers) - very promising
+- <https://github.com/apogeu/apogeu> poor docs but promising
+- <http://sailsjs.com/> well supported, i need to learn this at some point
+
+Angular solutions i dont consider:
+- <https://github.com/meanjs/mean>
+- <https://github.com/linnovate/mean>
