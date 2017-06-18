@@ -41,7 +41,7 @@ I have a few options here:
 - VulcanJS
 - KeystoneJS - dead, sadly
 - Django - unexplored
-- Meteor/base - i am most familiar
+- Meteor/base - i am most familiar and have made my own version, [Base-FCC](https://github.com/sw-yx/sw-yx.github.io/blob/master/_posts/2017-03-14-Finished-Base-FCC.md)
 - react-starter-kit
 - [allcount](https://allcountjs.com/) - no longer maintained but god damn its good 
 - [Feathers](https://github.com/feathersjs/feathers) - very promising
