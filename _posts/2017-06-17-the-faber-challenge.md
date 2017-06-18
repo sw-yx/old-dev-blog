@@ -6,6 +6,7 @@ categories: projects
 tags: fat
 ---
 
+# Weekend sprint! 
 Meb Faber [threw down the gauntlet](http://mebfaber.com/2017/06/07/owe-160000-mba-get-paid-receive-masters-investing/) for one of my most passionate projects. I don't feel ready but the time is right to do this and this is going to happen with or without me.
 
 Basically, the problem is the balance between consumption (entropy) and creation (order).
@@ -16,7 +17,7 @@ The solution for this on the low end is a social layer to crowdsource and filter
 
 To get traction though, I hope to get Meb's help. So I must tailor my mvp to his criteria.
 
-Here are the specs he has laid out:
+## Here are the specs he has laid out:
 1. Rank each podcast on a scale of 1-10.
 2. Identify the best sections from all the episodes (FYI, a great clip could come from an episode that you didn’t rate highly overall). Be sure to label the exact minute markers (start and end times) of the quality content. A great clip could be just a few seconds, or far longer (there isn’t a time cut-off – the issue is quality).
 3. For each podcast section you identify as ‘best,” write-up a short, 1-3 bullet-point sentence description, identifying the subject matter, and what makes it worthy of listening to.
@@ -25,7 +26,7 @@ Here are the specs he has laid out:
 
 I aim to create software to solve 1, 2, 4, and 5.
 
-Meb also outlined some details on twitter:
+## Meb also outlined some details on twitter:
 1. [hire and pay about 5 quality and motivated people to listen, rate, and summarize about 20 weekly podcasts.](https://twitter.com/MebFaber/status/875764151674585088)
 2. [if there is a better solution for paying on per week basis and utilizing all 150?](https://twitter.com/MebFaber/status/875764528637648897)
 3. [his list of 16 podcasts he definitely listens to](https://twitter.com/MebFaber/status/870686357089165317)
@@ -33,7 +34,7 @@ Meb also outlined some details on twitter:
 
 ---
 
-#Technical choices
+# Technical choices
 
 There is ideally an admin page to do the assignment uploads and to view (even play) results but that is actually not necessary for the MVP.
 
@@ -51,3 +52,23 @@ I have a few options here:
 Angular solutions i dont consider:
 - <https://github.com/meanjs/mean>
 - <https://github.com/linnovate/mean>
+
+---
+
+after needless hours of surveying I think I am going to go with Base-FCC, but I definitely need to explore VulcanJS, Feathers, SailsJS, and then at some point Django.
+
+# Building the MVP
+
+Here is what I will need to do for the MVP.
+- Display a list of podcast episodes for each regular user
+- Click the episode to go to a single episode page where it shows rank and has a UI for adding start-end-summary blocks
+- ICYMI bit down below on main page
+
+# Nice to haves
+
+- time saved progress bar
+- ad blocks
+- guest and other structured data
+- user podcast submissions
+- top5 voting system
+- post submission discussion area
