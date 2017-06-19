@@ -12,7 +12,7 @@ I realized today that Meteor Chef has migrated to a new version (this week!) cal
 
 # Meteor is fanatical about security
 
-a small anecdote as I am still working on adapting Pup. I was trying to rapidly develop and that meant adding a ton of fields to my documents for this CRUD application. Meteor checks each and every single field coming in presumably for injection and type safety so when you try to save it without checking each field it fails. I lost about an hour because there is a case in which Meteor fails SILENTLY.
+a small anecdote as I am still working on adapting Pup. I was trying to rapidly develop and that meant adding a ton of fields to my documents for this CRUD application. Meteor checks each and every single field coming in presumably for injection and type safety so when you try to save it without checking each field it fails. I lost about an hour because there is a case in which Meteor fails SILENTLY (edit: silent failure happens when you try to insert a document that does not have all the required fields)
 
 ```javascript
 import { Meteor } from 'meteor/meteor';
