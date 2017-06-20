@@ -11,3 +11,7 @@ I have been battling a particularly terrible bug with a nested react component f
 The reason this was happening is that I was instantiating A by supplying props from B, and then within A I was modifying those props so it could be read back again by B. However this modified my defaultProps within B and _THOSE_ persisted when i switched from B1 to B2.
 
 god damn.
+
+---
+
+3.00. my task now is to add deleting capability to the guestEditor.
