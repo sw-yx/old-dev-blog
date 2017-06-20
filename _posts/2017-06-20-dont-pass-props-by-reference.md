@@ -15,3 +15,9 @@ god damn.
 ---
 
 3.00. my task now is to add deleting capability to the guestEditor.
+
+---
+
+3.15. my task now is to port the guests module to the segments module.
+
+the subtask is to create a timepicker. the ones i have tried arent good so I will have to do it myself.
