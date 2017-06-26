@@ -20,3 +20,7 @@ for my `blink` project today i will try this vue + firebase tutorial: <https://m
 it went ok except i had a minor stumble with regards to how `this` is binded in es5 vs es6 functions. obscure.
 
 next, to deploy, i am using this: <https://firebase.google.com/docs/hosting/quickstart>
+
+---
+
+deployment went well and was intuitive. now i have to figure out how to bring the table [over from codepen](https://codepen.io/swyx/pen/pwbyqb)
