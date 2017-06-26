@@ -10,3 +10,8 @@ it is monday and i am feeling productive. I have a boilerplate search project th
 
 - <https://habd.as/awesome-react-boilerplates/>
 - <http://andrewhfarmer.com/starter-project/>
+
+---
+
+for my `blink` project today i will try this vue + firebase tutorial: <https://medium.com/codingthesmartway-com-blog/vue-js-2-firebase-e4b2479e35a8>
+
