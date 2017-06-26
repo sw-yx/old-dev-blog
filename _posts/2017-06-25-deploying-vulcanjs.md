@@ -10,4 +10,7 @@ I spent this weekend going thru the vulcanjs tutorials. I noticed one thing that
 
 ---
 
+# Deploying VulcanJS on Heroku
+Start with this: <https://www.coshx.com/blog/2016/08/19/how-to-deploy-a-meteor-1-4-app-to-heroku/>
+
 tbc
