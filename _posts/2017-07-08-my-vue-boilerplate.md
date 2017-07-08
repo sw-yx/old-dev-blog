@@ -18,4 +18,9 @@ npm i --save-dev webpack babel-core babel-loader babel-preset-es2015 babel-prese
 ```
 
 links used in the creation of this:
-- 
+- <https://nuxtjs.org/guide>
+
+
+---
+
+ok after a good run today I am rethinking my ambition. i need to work in small incremental steps not big ones like the above. i am going to adapt pup to make a boilerplate search engine. lets go.
