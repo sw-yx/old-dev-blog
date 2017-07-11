@@ -29,3 +29,9 @@ I am going to just do the next two points on the clientside.
 
 
 I have also open sourced it <https://github.com/sw-yx/packageJason>
+
+---
+
+ok its 6.50pm and midday today i implemented the meteor dependency scraping just because i couldnt bear to go without it.
+
+now i have to do boilerplate saving which is the second last "basic" feature I should do (the other feature being the parametric landing page that lets people just input any owner+repo combo and go straight to document adding)
