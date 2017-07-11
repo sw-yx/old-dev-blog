@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-07-10
-title: boilerplate search
+title: boilerplate search 2
 categories: meteor projects
 tags: fat
 ---
