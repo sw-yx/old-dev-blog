@@ -12,3 +12,11 @@ next feature. the dependency filter should be relatively easy to do but i will n
 - create an api to retrieve the dependencies (no need for count) `documents.dependencies`
 - create the filtering api and modify in `documents.list`
 - create the frontend to use the two api's - basically an autocomplete search bar to know what to include
+
+---
+
+remodel went well.
+
+i was wrong to want to create a separate api to retrieve just the dependencies. [you cannot call the search on the same collection multiple times](https://docs.meteor.com/api/collections.html) which is mildly annoying (here is a SO question on [this big topic](https://stackoverflow.com/questions/19826804/understanding-meteor-publish-subscribe/21853298#21853298))
+
+I am going to just do the next two points on the clientside.
