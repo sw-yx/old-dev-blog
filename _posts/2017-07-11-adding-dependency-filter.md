@@ -25,5 +25,7 @@ I am going to just do the next two points on the clientside.
 
 2.5 hours later and this is done!
 
-![boilerplate dependency search](https://twitter.com/swyx/status/884675880236306436)
+[boilerplate dependency search](https://twitter.com/swyx/status/884675880236306436)
 
+
+I have also open sourced it <https://github.com/sw-yx/packageJason>
