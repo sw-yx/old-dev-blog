@@ -20,3 +20,10 @@ remodel went well.
 i was wrong to want to create a separate api to retrieve just the dependencies. [you cannot call the search on the same collection multiple times](https://docs.meteor.com/api/collections.html) which is mildly annoying (here is a SO question on [this big topic](https://stackoverflow.com/questions/19826804/understanding-meteor-publish-subscribe/21853298#21853298))
 
 I am going to just do the next two points on the clientside.
+
+---
+
+2.5 hours later and this is done!
+
+![boilerplate dependency search](https://twitter.com/swyx/status/884675880236306436)
+
