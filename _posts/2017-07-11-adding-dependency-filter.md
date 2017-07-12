@@ -35,3 +35,7 @@ I have also open sourced it <https://github.com/sw-yx/packageJason>
 ok its 6.50pm and midday today i implemented the meteor dependency scraping just because i couldnt bear to go without it.
 
 now i have to do boilerplate saving which is the second last "basic" feature I should do (the other feature being the parametric landing page that lets people just input any owner+repo combo and go straight to document adding)
+
+---
+
+i have implemented very basic hearting. it sits on the boilerplate collection instead of the user collection which i'm not super happy about but given that hearts are not private it is probably okay. (the difference is how you join the two in the frontend)
