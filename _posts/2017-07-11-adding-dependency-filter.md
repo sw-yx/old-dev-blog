@@ -39,3 +39,15 @@ now i have to do boilerplate saving which is the second last "basic" feature I s
 ---
 
 i have implemented very basic hearting. it sits on the boilerplate collection instead of the user collection which i'm not super happy about but given that hearts are not private it is probably okay. (the difference is how you join the two in the frontend)
+
+---
+
+11pm. alright. now for the public api. this is a tricky thing to do because meteor doesnt do routes like a regular node/express app. Let's see:
+
+- modify the front page to take owner/repo combinations without authentication
+- clean up the score display to look nicer instead of some ugly numbers
+
+
+2am. it took a long while to refactor the edit boilerplate page to have a separate boilerplateStats component without having the state communication messed up.
+
+Now to get it onto the front page with owner/repo combinations. I can also knock out the github URL copy paste.
