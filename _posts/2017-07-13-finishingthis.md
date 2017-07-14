@@ -17,9 +17,9 @@ i prettified the stats but had some trouble with the tweet this buton which is s
 
 ---
 
-and we are done!
+and we are done! <https://packagejason.herokuapp.com>
 
-![demo](https://github.com/sw-yx/packageJason/blob/master/public/fulldemo1.gif)
+![demo](https://github.com/sw-yx/packageJason/blob/master/public/fulldemo1.gif?raw=true)
 
 It is obviously not well designed (a slack acquaintance pointed out the margin issues which i couldnt quite resolve before pushing) but it is passable and has emojis to show scores!!! (that math involved using `tanh` functions and scaling things down from real number space to probability space for display, then to discrete integer space for the emoji mapping...)
 
