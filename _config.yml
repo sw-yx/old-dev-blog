@@ -1,7 +1,7 @@
 # Site settings
-title: swyx.io
+title: swyx/dev/blog
 description: 'because swyx.com was taken'
-url: 'http://swyx.io' 
+url: 'http://sw-yx.github.io' 
 baseurl: '/'
 google_analytics: 'UA-79238211-1'
 # disqus_shortname: 'your-disqus-name'
