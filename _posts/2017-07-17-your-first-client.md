@@ -24,3 +24,7 @@ From a FSA post I made this morning:
 > - http://www.lauraelizabeth.co/
 
 > your first client is you. make your client happy.
+
+---
+
+last night i had a very constructive chat with sacha greif who is launching the state of js (stateofjs.com) 2017 and also recently launched vulcanjs 1.6. Jeff of SED ok'ed an interview with him on behalf of the podcast. i have had problems adopting vulcanjs in the past and this is an unbelievable opportunity to ask the man/legend about everything. I am going to spend today brushing up on Sacha and thinking up good questions. I am dropping my design stuff today.
