@@ -67,3 +67,20 @@ js learn list
 49:oo - Can you give some advice on full time freelancing/consulting? How do you get you clients and do your marketing?
 
 stay frugal and put money away - quit day job and keep company as client.
+
+<https://medium.com/my-thoughts-7/the-product-spectrum-bb2084b6f5b3>
+ 
+ ten hour rule and finish line theory : <http://www.binpress.com/blog/2015/07/21/podcast-39-sacha-greif/>
+ 
+ meteor ssr and hmr
+ 
+ vulcan package based architecture
+ HOC in vulcan -> withList - loading, loading prop, pagination
+ how does vulcan interact with redux store
+ what are the various ways people deal with i18n
+ 
+quincy larson and sacha <https://www.youtube.com/watch?v=B0Jh2bz1mHY>
+
+how to contribute - tutorials, bugs. telescope didnt attract other contributors
+
+<https://medium.com/my-thoughts-7/the-product-spectrum-bb2084b6f5b3>
