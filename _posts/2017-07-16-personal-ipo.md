@@ -23,3 +23,7 @@ What I am going to do today:
 - put my domain on DO
 - host some sort of CMS but with the ability to set up new routes for other projects (including my own clone of buffer)
 - put up a landing page on codepen.
+
+---
+
+well i got the DO hosting done and didnt use a CMS but ended up using a free HTML5 template that looked nice enough. it is probably not worth me putting more time into this for now. I should build prodesign30 instead.
