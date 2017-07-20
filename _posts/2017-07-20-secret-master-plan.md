@@ -22,9 +22,9 @@ I have been on a streak of personal philosophy discoveries recently. To wit:
 
 I think the Personal IPO is the most important one of the lot. And the journey starts with publishing a [not so secret](https://www.tesla.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me) master plan. Just between you and me.
 
-To wit:
+The Plan:
 
-- Create a following through a number of ventures, one of which may payoff. The list: Move 'Zig', Impostor Syndrome, GetGist, HOHN, DualClassMe.
+- Create a following through a number of ventures, one of which may payoff. The list: Move 'Zig', Impostor Syndrome, GetGist, HOHN, DualClassMe, ProDesign30.
 - Use what I learn to write a book. Either the Personal IPO or something technical.
 - Use the book to expand network and discover real problems.
 - Use network to validate and solve a real problem.
