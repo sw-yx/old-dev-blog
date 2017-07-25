@@ -44,3 +44,5 @@ avoid readymade
 boxy/mighty: franklin gothic, blackoak, bree, proxima nova, eurostile
 
 serif for body text and sans serif for page annotations etc.
+
+[Google web fonts that don't suck](https://archive.fo/20140307183703/sachagreif.com/more-google-webfonts-that-dont-suck/)
