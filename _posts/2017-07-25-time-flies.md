@@ -19,3 +19,7 @@ just contacted uber dude
 ---
 
 going to do design over the next 30+ minutes.
+
+---
+
+this made an impact: [web design is 95% typography](https://ia.net/topics/the-web-is-all-about-typography-period/)
