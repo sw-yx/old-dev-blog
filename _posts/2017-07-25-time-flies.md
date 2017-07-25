@@ -23,3 +23,5 @@ going to do design over the next 30+ minutes.
 ---
 
 this made an impact: [web design is 95% typography](https://ia.net/topics/the-web-is-all-about-typography-period/)
+
+meta and proxima look good. font is a beautiful group of letters i/o a group of beautiful letters.
