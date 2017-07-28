@@ -27,3 +27,9 @@ projects
 design
 - http://studiofellow.com/theory-sprints/
 - https://justinjackson.ca/
+
+things people worry about in bootcamp week 1:
+
+- pair programming, being lost
+- stress/pace
+- binary search tree recursion
