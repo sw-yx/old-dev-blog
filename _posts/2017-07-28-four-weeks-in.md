@@ -19,7 +19,8 @@ todo:
 - https://github.com/wearehive/project-guidelines
 - https://github.com/sorrycc/awesome-javascript
 - https://www.tinpw.com/home/2017/7/23/tuttutorial-how-to-make-your-first-very-own-twitter-bot
-
+- https://www.twilio.com/blog/2014/11/choose-your-own-adventure-presentations-with-reveal-js-python-and-websockets.html
+- https://www.twilio.com/blog/2015/07/the-full-stack-python-guide-to-deployments-a-new-book-by-matt-makai.html
 
 projects
 - https://lil.law.harvard.edu/blog/2017/07/21/a-million-squandered-the-million-dollar-homepage-as-a-decaying-digital-artifact/?utm_content=buffer276c6&utm_medium=social&utm_source=athnshah&utm_campaign=buffer
