@@ -1,12 +1,12 @@
 ---
 layout: post
 title: FSA deploy twitter js
-date: 2017-08-01
+date: 2017-07-31
 categories: FSA
 tags: sharing
 ---
 
-I don't like leaving my projects in localhost. What's the point of being a web developer if you don't put your stuff on the web? Where possible I like to practice deploying things as this is often a source of extreme frustration with a lot of conflicting advice.
+I don't like leaving my projects in localhost. What's the point of being a web developer if you don't put your stuff on the web? Where possible I like to practice deploying things as this is often a source of extreme frustration with a lot of conflicting advice. also for stuff like socket.io you can't -really- test that you are emitting to different machines unless you host it somewhere that you can access (for example from your phone)
 
 While containerized and dedicated box deployments are relatively straightforward, BaaS services like heroku are often free and great choices for hosting some things.
 
