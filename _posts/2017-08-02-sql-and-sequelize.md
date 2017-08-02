@@ -45,6 +45,8 @@ commercial sites:
 
 - <https://web.archive.org/web/20160708172734/http://antiquepianoshop.com/>
 - <https://web.archive.org/web/20160703164955/http://www.cellarthief.com:80/>
+- <https://reactioncommerce.com/>
+- <https://formidable.com/>
 
 nonprofits:
 
