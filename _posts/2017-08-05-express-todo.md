@@ -14,3 +14,13 @@ i am keen on completing more things with the buffer clone as that seems to be pr
 
 
 ![gif](https://github.com/sw-yx/fsa-checkpoint-express/blob/master/expresstodo.gif?raw=true)
+
+---
+
+i have run out of easy things to do in my [bufferclone trello board](https://trello.com/b/QAeDHcjU/swyxio-bufferclone). I now have to put authentication into my app. here goes. 2am check.
+
+Resources:
+- <http://blog.joeandrieu.com/2012/01/30/the-worlds-simplest-autotweeter-in-node-js/>
+- <http://moonlitscript.com/post.cfm/how-to-use-oauth-and-twitter-in-your-node-js-expressjs-app/>
+- <https://scotch.io/tutorials/easy-node-authentication-twitter> [original](https://scotch.io/tutorials/easy-node-authentication-setup-and-local)
+- [passportjs docs](http://passportjs.org/docs)
