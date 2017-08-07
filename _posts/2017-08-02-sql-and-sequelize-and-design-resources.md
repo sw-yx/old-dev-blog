@@ -3,7 +3,7 @@ layout: post
 date: 2017-08-02
 categories: fsa
 tags: sick
-title: sql and sequelize
+title: sql and sequelize and design resources
 ---
 
 i dashed off the EF application today. as before i don't feel super great about it but I was forced to pitch an idea i dont 100% believe in yet.
@@ -39,6 +39,7 @@ personal/resumes:
 - <http://www.lauraelizabeth.co/>
 - <https://github.com/jadjoubran/jadjoubran.io>
 - <https://justinjackson.ca/>
+- <https://syropia.net/>
 
 tech sites:
 
