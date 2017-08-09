@@ -13,7 +13,7 @@ prerequisites: go through the official heroku guide here: <https://devcenter.her
 ---
 
 # Steps 
-### assuming you have started from a [clean wikistack local build](https://github.com/sw-yx/fsa-wikistack-deploy/tree/37d8146b8e40a46802243ffcac1cbc6c2b0ce2c2):
+_assuming you have started from a [clean wikistack local build](https://github.com/sw-yx/fsa-wikistack-deploy/tree/37d8146b8e40a46802243ffcac1cbc6c2b0ce2c2):_
 
 1. `heroku login`
 2. `heroku create myAppName`
