@@ -8,9 +8,12 @@ tags: ambitious
 
 my last post on [deploying the FSA Twitter.js project](https://sw-yx.github.io/2017/FSA-deploy-twitter-js/) was well received. well, here's the FSA wikistack version!
 
-### prerequisites: go through the official heroku guide here: <https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app>
+prerequisites: go through the official heroku guide here: <https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app>
 
-# Steps assuming you have started from a clean wikistack local build <https://github.com/sw-yx/fsa-wikistack-deploy/tree/37d8146b8e40a46802243ffcac1cbc6c2b0ce2c2>:
+---
+
+# Steps 
+### assuming you have started from a [clean wikistack local build](https://github.com/sw-yx/fsa-wikistack-deploy/tree/37d8146b8e40a46802243ffcac1cbc6c2b0ce2c2):
 
 1. `heroku login`
 2. `heroku create myAppName`
