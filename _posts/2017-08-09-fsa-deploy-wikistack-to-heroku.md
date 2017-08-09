@@ -10,7 +10,11 @@ my last post on [deploying the FSA Twitter.js project](https://sw-yx.github.io/2
 
 prerequisites: go through the official heroku guide here to get a simple overview of what we will be doing: <https://devcenter.heroku.com/articles/getting-started-with-nodejs>
 
+another good general instruction guide is on the `sequelize` documentation itself! <https://sequelize.readthedocs.io/en/1.7.0/articles/heroku/>
+
 ---
+
+The following specifically deals with deploying FSA wikistack.
 
 # Steps 
 _assuming you have started from a [clean wikistack local build](https://github.com/sw-yx/fsa-wikistack-deploy/tree/37d8146b8e40a46802243ffcac1cbc6c2b0ce2c2):_
