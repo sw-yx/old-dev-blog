@@ -928,6 +928,8 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-size: 1em;
 	color: #AAA; }
+code {
+	color: #339; }
 
 ::selection {
 	background: #fae3df; }
