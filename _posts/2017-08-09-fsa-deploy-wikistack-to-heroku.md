@@ -31,3 +31,7 @@ _assuming you have started from a [clean wikistack local build](https://github.c
 8. `git commit -am "deploy to heroku"` and `git push heroku master`
 
 I deployed my example at <https://swyx-wikistack.herokuapp.com>
+
+---
+
+i faced a problem with `git commit -am` and `git add . && git commit -m`. wont repeat that again.
