@@ -61,3 +61,6 @@ nonprofits:
 - <http://studiofellow.com/theory-sprints/>
 
 - <https://www.designbetter.co/principles-of-product-design>
+
+
+<http://designresources.party/>
