@@ -64,3 +64,4 @@ nonprofits:
 
 
 <http://designresources.party/>
+<https://github.com/alexpate/awesome-design-systems>
