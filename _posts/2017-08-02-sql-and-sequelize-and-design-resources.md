@@ -65,3 +65,5 @@ nonprofits:
 
 <http://designresources.party/>
 <https://github.com/alexpate/awesome-design-systems>
+<https://www.admiretheweb.com>
+<https://sitesee.com/>
