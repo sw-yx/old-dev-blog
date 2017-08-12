@@ -40,6 +40,7 @@ personal/resumes:
 - <https://github.com/jadjoubran/jadjoubran.io>
 - <https://justinjackson.ca/>
 - <https://syropia.net/>
+- <http://mor10.com/>
 
 tech sites:
 
