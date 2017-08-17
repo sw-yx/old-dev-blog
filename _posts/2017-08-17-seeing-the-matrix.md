@@ -17,3 +17,5 @@ its a little bit of an overstatement as today's exercise was kinda mundane but w
 ### more importantly, (particularly with the optional Itinerary Days bonus) we were literally but not explicitly being asked to build all the basic functionality of a React or Vue frontend. 
 
 in particular the state change re-render caught a lot of my peers off guard (having built functionality incrementally upward with no view as to the end goal) but i saw this coming a mile away and structured my code for that. We start React on monday so I am looking forward to everyone being on the same page but it was really exciting to me to be able to do all this with vanilla JS. No `react` and `react-dom`. No `axios` or jQuery. just vanilla JS. if you can do that, you can build whatever you want. There is no spoon.
+
+p.s. the heroku site is updated with persistence: <https://swyx-tripplanner.herokuapp.com/#SwyxAwesomeTrip>. obviously discovery and authentication are key features to add from here but i didnt bother for this toy app
