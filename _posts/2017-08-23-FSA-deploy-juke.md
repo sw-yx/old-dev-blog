@@ -14,10 +14,12 @@ So the core instructions are sited at the [wikistack tutorial](https://sw-yx.git
 1. to configure `process.env.DATABASE_URL`, go to `server/db/db.js` and add it in there alongside `require(path.join(__dirname, '../env')).DATABASE_URI`
 2. old `pg` dependency is gone
 3. remember to create a table in SQL. this time, call it `juke`. refer to the wikistack tutorial for instructions
-4. **ok so it gets tricky from here!** We aren't going to use webpack to rebuild the app on heroku so we need `public/bundle.js` to be served. delete that and `public/bundle.map.js` from the `.gitignore` so you will be able to push it to heroku. you may want to do this in a different branch (`git checkout -b herokubranch`) so you still have the right gitignore for github, but i didn't bother. (nothing secret in `public` anyway)
+4. **ok so it gets tricky from here!** We aren't going to use webpack to rebuild the app on heroku so we need `public/bundle.js` to be served. delete that and `public/bundle.map.js` from the `.gitignore` so you will be able to push it to heroku. you may want to do this in a different branch (`git checkout -b herokubranch`) so you still have the right gitignore for github, but i didn't bother. (nothing secret in `public` anyway).
 5. remove the `postinstall` process from `package.json`. you'll seed your database manually...
-6. Time to push to heroku! `git add . && git commit -m "heroku deploy"`. but here the difference is you are pushing a specific BRANCH instead of master. However, heroku only runs master. how to do that? `git push heroku <YOURBRANCHNAME>:master`.
+6. Time to push to heroku! `git add . && git commit -m "heroku deploy"`. MAKE SURE BUNDLE.JS is ADDED!! and now when you push here the difference is you are pushing a specific BRANCH instead of master. However, heroku only runs master. how to do that? `git push heroku <YOURBRANCHNAME>:master`.
 6. ok hopefully that went well. to seed the db, `heroku run node ./bin/seed`
 7. `heroku open`!
 
-contact me @swyx on twitter if you run into any issues.
+contact me @swyx on twitter if you run into any issues. My app is deployed here <https://swyx-juke.herokuapp.com/#/>
+
+
