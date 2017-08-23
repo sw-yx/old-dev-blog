@@ -3,7 +3,7 @@ layout: post
 date: 2017-08-22
 title: The Value of Opinionated Progression
 categories: FSA
-tags: happy
+tags: happy appreciative
 ---
 
 Today we spent finishing up our workshop on React Router v4 and I just had to take a pause and talk about the "value of opinionated progression".
