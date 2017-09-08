@@ -10,3 +10,22 @@ today i led a small group of students to go over auther, the express-session and
 
 
 i think auth is a big pain point and there is a lack of education around it. as unexciting as it is, i think it could be fertile ground for a video tutorial series.
+
+---
+
+# notes about passport
+
+### What happens when I click login with google?
+
+- Auther redirects me to google's login
+- I login with google
+- Google redirects me back to Auther (at the callback URL)
+- Auther verifies with google
+- Google passes my profile back to Auther
+- When a user logs in, passport "serializes" them: stores some unique identifying information (often id) on the session.
+
+"Deserialization" occurs on every request, it uses that piece of information to retrieve an actual user and then attaches that user to the request request.user.
+
+In any middleware downstream of your passport session middleware, you will have access to request.user which represents the user making the request!
+
+Because of how we've set it up, request.user will exist for those that logged in with OAuth or those that logged in locally.
