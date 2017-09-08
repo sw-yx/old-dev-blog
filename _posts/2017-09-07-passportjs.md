@@ -6,6 +6,7 @@ categories: passportjs
 tags: determined
 ---
 
-resources for passport.js:
+today i led a small group of students to go over auther, the express-session and passport.js workshop in the class that most of them had skipped. auth is my white whale and i decided to take it head on and also learn-by-teaching. i prepared by doing the authentication part of the boilermaker thing and then pretty much just led the class for 3 straight hours. people got exhausted and asked for two breaks and also we got hung up a lot on es6 and react-redux details. all in all it was a very very tough thing to do and could have used better preparation and rehearsal but i still got applause at the end and i think everyone walked away a little more confident. i also did a quick react native primer because why not.
 
-- <https://bootsnipp.com/snippets/featured/fancy-navbar-login-sign-in-form>
+
+i think auth is a big pain point and there is a lack of education around it. as unexciting as it is, i think it could be fertile ground for a video tutorial series.
