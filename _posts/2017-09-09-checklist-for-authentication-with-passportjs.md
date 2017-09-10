@@ -21,7 +21,7 @@ If your goal is to comprehensively handhold somebody through the process of addi
 - [Node.js, Express.js, Mongoose.js and Passport.js Authentication](https://www.djamware.com/post/58bd823080aca7585c808ebf/nodejs-expressjs-mongoosejs-and-passportjs-authentication)
 - [Passport org on Github has maintained minimalist examples](https://github.com/passport)
 
-In the rest of this article I'm going to try to write for the person who is roughly familiar with passport.js that just wants a reference as he/she implements on top of an existing Node/Express app. 
+### In the rest of this article I'm going to try to write for the person who is roughly familiar with passport.js that just wants a reference as he/she implements on top of an existing Node/Express app. 
 
 
 Table of Contents
