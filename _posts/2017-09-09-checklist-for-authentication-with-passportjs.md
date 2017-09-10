@@ -63,7 +63,7 @@ Basic: `npm install passport express-session body-parser`
 Strategies:
 
 - Local: `npm install passport-local`
-- DB specific: `passport-local-mongoose`
+- DB specific helpers: `passport-local-mongoose` or [passport-local-sequelize](https://github.com/madhurjain/passport-local-sequelize)
 - Provider Strategies: `npm install passport-github passport-twitter passport-google-oauth`
 
 <a name="two"/>
@@ -172,36 +172,6 @@ I am also going to assume you are not new to registering your app on the respect
 // implement passport.use(new GoogleStrategy(), function (token, refreshToken, profile, done) {})
 
 ```
-
-Sample implementation for google auth with a sequelize `User` model
-
-```javascript
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-passport.use(
-  new GoogleStrategy({
-    clientID: process.env.GOOGLE_CLIENTID,
-    clientSecret: process.env.GOOGLE_CLIENTSECRET,
-    callbackURL: '/auth/google/callback'
-  },
-  function (token, refreshToken, profile, done) {
-    User.findOrCreate({
-        where: {
-            googleId: profile.id // make sure user model has a field for googleId
-        }, 
-        defaults: {
-            name: profile.displayName,
-            photo: profile.photos ? profile.photos[0].value : undefined,
-            email: profile.emails[0].value
-        }
-    }).spread(user => {
-        done(null, user)
-    })
-    .catch(err => done(err, false))
-  })
-);
-
-```
-
 
 Sample implementation for google auth with a sequelize `User` model
 
