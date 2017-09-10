@@ -84,10 +84,19 @@ var session      = require('express-session');
 //...
 
 app.use(cookieParser()); // read cookies (needed for auth)
-app.use(bodyParser()); // get information from html forms
+app.use(bodyParser.json()); // get information from html forms
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: process.env.SESSION_SECRET })); // session secret
 app.use(passport.initialize()); // must be after express-session is called)
 app.use(passport.session()); // persistent login sessions
+```
+
+Optionally use `connect-flash` to be able to `req.flash` error messages:
+
+```javascript
+var flash    = require('connect-flash');
+// ...
+app.use(flash()); // use connect-flash for flash messages stored in session
 ```
 
 <a name="three"/>
