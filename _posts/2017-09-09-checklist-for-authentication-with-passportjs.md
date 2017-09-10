@@ -10,18 +10,18 @@ Webapp authentication is important but complicated. This makes the process of do
 
 If your goal is to sell someone on how easily you can do something, your documentation is going to be scant on details (particularly if context is needed). this is the problem with [the official passport.js docs](http://passportjs.org/docs). Any tutorial that says "authentication is easy" is lying to you and is virtually guaranteed to leave out some important bit of implementation detail you aren't going to come up with on your own.
 
-If your goal is to comprehensively handhold somebody through the process of adding authentication on an existing webapp, your tutorial is going to have a load of extraneous detail about the structure (in particular, assumptions about the frontend and the database stack) and it is going to feel like it never ends. In case it helps, here are the top google results for passport.js tutorial:
+If your goal is to comprehensively handhold somebody through the process of adding authentication on an existing webapp, your tutorial is going to have a load of extraneous detail about the structure (in particular, assumptions about the frontend and the database stack) and it is going to feel like it never ends. In case it helps, here are the usable passport.js tutorials I found. Note the wide variance in stack.:
 
 - [Starting with Authentication](https://medium.com/of-all-things-tech-progress/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359)
 - [Node.js Authentication using Passport.js](https://blog.risingstack.com/node-hero-node-js-authentication-passport-js/)
 - [Authenticating Node.js Applications With Passport](https://code.tutsplus.com/tutorials/authenticating-nodejs-applications-with-passport--cms-21619)
 - [Authentication Using PassportJS](https://danialk.github.io/blog/2013/02/23/authentication-using-passportjs/)
-- [Easy Node Authentication: Setup and Local](https://scotch.io/tutorials/easy-node-authentication-setup-and-local)
+- [Easy Node Authentication: Setup and Local](https://scotch.io/tutorials/easy-node-authentication-setup-and-local) <- Best in class
 - [Tutorial for Passport.js authentication in a Node.js Express application](https://www.jokecamp.com/tutorial-passportjs-authentication-in-nodejs/)
 - [Node.js, Express.js, Mongoose.js and Passport.js Authentication](https://www.djamware.com/post/58bd823080aca7585c808ebf/nodejs-expressjs-mongoosejs-and-passportjs-authentication)
 - [Passport org on Github has maintained minimalist examples](https://github.com/passport)
 
-> I'm going to try to write for the person who is roughly familiar with passport.js that just wants a todo-list to check off as he/she implements on top of an existing Node/Express app. 
+In the rest of this article I'm going to try to write for the person who is roughly familiar with passport.js that just wants a reference as he/she implements on top of an existing Node/Express app. 
 
 
 Table of Contents
