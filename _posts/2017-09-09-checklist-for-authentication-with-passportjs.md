@@ -6,7 +6,7 @@ tags: curious
 date: 2017-09-09
 ---
 
-Webapp authentication is important but complicated. This makes the process of documenting and teaching libraries like passport.js a difficult proposition. 
+Webapp authentication is important but complicated. This makes the process of documenting and teaching libraries like passport.js a difficult proposition.
 
 if your goal is to sell someone on how easily you can do something, your documentation is going to be scant on details (particularly if context is needed). this is the problem with [the official passport.js docs](http://passportjs.org/docs).
 
@@ -21,10 +21,22 @@ if your goal is to comprehensively handhold somebody through the process of addi
 - [Node.js, Express.js, Mongoose.js and Passport.js Authentication](https://www.djamware.com/post/58bd823080aca7585c808ebf/nodejs-expressjs-mongoosejs-and-passportjs-authentication)
 - [Passport org on Github has maintained minimalist examples](https://github.com/passport)
 
-I'm going to try to write for the person who is roughly familiar with passport.js that just wants a todo-list to check off as he/she implements on top of an existing Node/Express app.
+I'm going to try to write for the person who is roughly familiar with passport.js that just wants a todo-list to check off as he/she implements on top of an existing Node/Express app. 
+
+
+Table of Contents
+=================
+
+  * [0. Choices to make](#zero)
+  * [1. NPM installs](#one)
+  * [2. Require and configure on Express Server process](#two)
+  * [3. Configure Passport Serialization](#three)
+  * [4. Configure Passport Strategies](#four)
+  * [5. Setup routes](#five)
+  * [6. Frontend Joy](#six)
 
 ---
-
+<a name="zero"/>
 # 0. Choices to make
 
 Take stock of how your app is set up.
@@ -37,6 +49,7 @@ Take stock of how your app is set up.
 3. (Bonus) What is the "forgot password" flow? Are you going to verify emails on signup? How about social account linking?
 1. (Bonus) do your users have different permission levels? What functionality is scoped to which user levels?
 
+<a name="one"/>
 # 1. NPM installs
 
 Append `--save` if required (not required for Node 8). 
@@ -49,11 +62,12 @@ Strategies:
 - DB specific: `passport-local-mongoose`
 - Provider Strategies: `npm install passport-github passport-twitter passport-google-oauth`
 
+<a name="two"/>
 # 2. Require and configure on Express Server process
 
 This is pretty straightforward and doesn't have much flexibility. On your `server.js` or equivalent:
 
-```
+```javascript
 var passport = require('passport');
 
 var cookieParser = require('cookie-parser');
@@ -71,11 +85,12 @@ app.use(passport.initialize()); // must be after express-session is called)
 app.use(passport.session()); // persistent login sessions
 ```
 
+<a name="three"/>
 # 3. Configure Passport Serialization
 
 This could be on `server.js`, but could also be split into a separate file and brought into the server file with `require('./config/passport')(passport)`
 
-```
+```javascript
 // implement passport.serializeUser
 // implement passport.deserializeUser
 
@@ -83,7 +98,7 @@ This could be on `server.js`, but could also be split into a separate file and b
 
 sample implementation for a standard `User` model from any ORM
 
-```
+```javascript
 const passport = require('passport');
 const User = require('../api/users/user.model');
 const router = require('express').Router();
@@ -313,7 +328,7 @@ Consider also how you will handle [401](https://httpstatusdogs.com/401-unauthori
 
 Sample redux and redux-thunk auth file:
 
-```
+```javascript
 import axios from 'axios';
 import { create as createUser } from './users';
 import { browserHistory } from 'react-router';
