@@ -1,6 +1,6 @@
 ---
 layout: post
-title: checklist for authentication with passport.js
+title: Passport.js the Hard Way Made Easy(-ier)
 categories: passportjs
 tags: curious
 date: 2017-09-09
@@ -8,7 +8,7 @@ date: 2017-09-09
 
 Webapp authentication is important but complicated. This makes the process of documenting and teaching libraries like passport.js a difficult proposition.
 
-if your goal is to sell someone on how easily you can do something, your documentation is going to be scant on details (particularly if context is needed). this is the problem with [the official passport.js docs](http://passportjs.org/docs).
+if your goal is to sell someone on how easily you can do something, your documentation is going to be scant on details (particularly if context is needed). this is the problem with [the official passport.js docs](http://passportjs.org/docs). Any tutorial that says "authentication is easy" is lying to you and is virtually guaranteed to leave out some important bit of 
 
 if your goal is to comprehensively handhold somebody through the process of adding authentication on an existing webapp, your tutorial is going to have a load of extraneous detail about the structure (in particular, assumptions about the frontend and the database stack) and it is going to feel like it never ends. In case it helps, here are the top google results for passport.js tutorial:
 
@@ -21,7 +21,7 @@ if your goal is to comprehensively handhold somebody through the process of addi
 - [Node.js, Express.js, Mongoose.js and Passport.js Authentication](https://www.djamware.com/post/58bd823080aca7585c808ebf/nodejs-expressjs-mongoosejs-and-passportjs-authentication)
 - [Passport org on Github has maintained minimalist examples](https://github.com/passport)
 
-I'm going to try to write for the person who is roughly familiar with passport.js that just wants a todo-list to check off as he/she implements on top of an existing Node/Express app. 
+> I'm going to try to write for the person who is roughly familiar with passport.js that just wants a todo-list to check off as he/she implements on top of an existing Node/Express app. 
 
 
 Table of Contents
@@ -34,9 +34,12 @@ Table of Contents
   * [4. Configure Passport Strategies](#four)
   * [5. Setup routes](#five)
   * [6. Frontend Joy](#six)
+  * [7. Bonus](#seven)
 
 ---
+
 <a name="zero"/>
+
 # 0. Choices to make
 
 Take stock of how your app is set up.
@@ -50,6 +53,7 @@ Take stock of how your app is set up.
 1. (Bonus) do your users have different permission levels? What functionality is scoped to which user levels?
 
 <a name="one"/>
+
 # 1. NPM installs
 
 Append `--save` if required (not required for Node 8). 
@@ -63,6 +67,7 @@ Strategies:
 - Provider Strategies: `npm install passport-github passport-twitter passport-google-oauth`
 
 <a name="two"/>
+
 # 2. Require and configure on Express Server process
 
 This is pretty straightforward and doesn't have much flexibility. On your `server.js` or equivalent:
@@ -86,6 +91,7 @@ app.use(passport.session()); // persistent login sessions
 ```
 
 <a name="three"/>
+
 # 3. Configure Passport Serialization
 
 This could be on `server.js`, but could also be split into a separate file and brought into the server file with `require('./config/passport')(passport)`
@@ -121,12 +127,14 @@ module.exports = router;
 
 if you are using [passport-local-mongoose](https://github.com/saintedlama/passport-local-mongoose) (see their docs for how to add the plugin to the `User` model) then you can simply do
 
-```
+```javascript
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 ```
 
 Ditto for [passport-local-sequelize](https://github.com/madhurjain/passport-local-sequelize)
+
+<a name="four"/>
 
 # 4. Configure Passport Strategies
 
@@ -139,7 +147,7 @@ I am also going to assume you are not new to registering your app on the respect
 - [Google Cloud Console](https://console.cloud.google.com/) ([instructions](https://support.google.com/cloud/answer/6158849?hl=en))
 - [Github Developer Program](https://github.com/settings/applications/new)
 
-```
+```javascript
 /* 
     CAN BE IMPLEMENTED IN STRATEGY SPECIFIC FILES NEXT TO THEIR RESPECTIVE ROUTES 
     You will probably want to import your user models to FindOrCreate users in your strategy callbacks below
@@ -158,7 +166,7 @@ I am also going to assume you are not new to registering your app on the respect
 
 Sample implementation for google auth with a sequelize `User` model
 
-```
+```javascript
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 passport.use(
   new GoogleStrategy({
@@ -188,7 +196,7 @@ passport.use(
 
 Sample implementation for google auth with a sequelize `User` model
 
-```
+```javascript
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 passport.use(
   new GoogleStrategy({
@@ -217,7 +225,7 @@ passport.use(
 
 Sample implementation for google with a mongoose `User` model:
 
-```
+```javascript
 passport.use(new GoogleStrategy({
         clientID        : configAuth.googleAuth.clientID,
         clientSecret    : configAuth.googleAuth.clientSecret,
@@ -254,6 +262,8 @@ passport.use(new GoogleStrategy({
     }));
 ```
 
+<a name="five"/>
+
 # 5. Setup routes
 
 You will likely need to set up an `/auth/` or `/api/auth/` route file, potetntially one per strategy and combined with the strategy setup you see above. Here are the things to deal with:
@@ -269,7 +279,7 @@ Here is a sample implementation of Provider Authentication and Callback. Notes:
 - here is your first chance to define the [scope](http://passportjs.org/docs/oauth#scope) of your auth request)
 - what will you do on successRedirect and on failureRedirect? Do you want to flash failure messages? Make sure to read the "Custom Callback" section of [the docs](http://passportjs.org/docs/authenticate) for the available options.
 
-```
+```javascript
     app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
 
     app.get('/auth/google/callback',
@@ -281,7 +291,7 @@ Here is a sample implementation of Provider Authentication and Callback. Notes:
 
 Sample logout implementation
 
-```
+```javascript
 app.get('/logout', function(req, res){
   console.log('logging out');
   req.logout();
@@ -291,7 +301,7 @@ app.get('/logout', function(req, res){
 
 Sample /me implementation
 
-```
+```javascript
 router.get('/me', function (req, res, next) {
   res.send(req.user);
 });
@@ -299,7 +309,7 @@ router.get('/me', function (req, res, next) {
 
 Sample [isAuthenticated](https://github.com/jaredhanson/passport/blob/master/lib/http/request.js#L83) middleware (this is undocumented; see [related SO question](https://stackoverflow.com/questions/14188834/documentation-for-ensureauthentication-isauthenticated-passports-functions/14301657#14301657))
 
-```
+```javascript
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) // if user is authenticated in the session, carry on 
@@ -316,6 +326,8 @@ app.get('/profile', isLoggedIn, function(req, res) {
     });
 });
 ```
+
+<a name="six"/>
 
 # 6. Frontend Joy
 
@@ -424,6 +436,8 @@ export const logout = () => dispatch => {
   .catch(err => console.error('logout unsuccessful', err));
 };
 ```
+
+<a name="seven"/>
 
 # 7. Bonuses - Account Linking, Forgot password, Email verify, permissioning etc
 
