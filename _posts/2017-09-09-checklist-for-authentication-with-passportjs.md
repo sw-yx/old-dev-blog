@@ -23,7 +23,6 @@ If your goal is to comprehensively handhold somebody through the process of addi
 
 ### In the rest of this article I'm going to try to write for the person who is roughly familiar with passport.js that just wants a reference as he/she implements on top of an existing Node/Express app. 
 
-
 Table of Contents
 =================
 
@@ -37,6 +36,27 @@ Table of Contents
   * [7. Bonus](#seven)
 
 ---
+
+In case this gets outdated, here is this tutorial's "package.json":
+
+```
+    "axios": "^0.15.0",
+    "express": "^4.13.3",
+    "express-session": "^1.15.5",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-github": "^1.1.0",
+    "passport-twitter": "^1.0.4",
+    "pg": "^4.5.5",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "sequelize": "^4.4.0",
+```
 
 <a name="zero"/>
 
