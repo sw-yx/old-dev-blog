@@ -94,8 +94,6 @@ This is pretty straightforward and doesn't have much flexibility. On your `serve
 
 ```javascript
 var passport = require('passport');
-
-var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
@@ -103,13 +101,14 @@ var session      = require('express-session');
 //middleware section, after var app = express();
 //...
 
-app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: process.env.SESSION_SECRET })); // session secret
 app.use(passport.initialize()); // must be after express-session is called)
 app.use(passport.session()); // persistent login sessions
 ```
+
+Note that `cookie-parser` is not needed since express 1.5.0.
 
 Optionally use `connect-flash` to be able to `req.flash` error messages:
 
@@ -161,7 +160,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 ```
 
-Ditto for [passport-local-sequelize](https://github.com/madhurjain/passport-local-sequelize)
+Ditto for [passport-local-sequelize](https://github.com/madhurjain/passport-local-sequelize). However this does seem somewhat more work than it's worth so I cannot wholeheartedly recommend.
 
 <a name="four"/>
 
