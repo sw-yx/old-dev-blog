@@ -347,7 +347,9 @@ Now the degrees of freedom are really wide open. Quite simply you just need to m
 
 Consider also how you will handle [401](https://httpstatusdogs.com/401-unauthorized)/[403](https://httpstatusdogs.com/403-forbidden) error codes in your UI.
 
-Sample redux and redux-thunk auth file:
+If using together with `react-router`, you may want to build a wrapper component [like in this SO example](https://stackoverflow.com/questions/43164554/how-to-implement-authenticated-routes-in-react-router-4) to redirect unauthenticated folks. This is also the recommended pattern in [the official example](https://reacttraining.com/react-router/web/example/auth-workflow).
+
+As for Redux management... Here's a sample redux and redux-thunk auth file:
 
 ```javascript
 import axios from 'axios';
