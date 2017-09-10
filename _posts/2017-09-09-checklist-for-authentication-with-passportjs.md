@@ -56,7 +56,7 @@ Take stock of how your app is set up.
 
 # 1. NPM installs
 
-Append `--save` if required (not required for Node 8). 
+Append `--save` if required (not required for npm 5+). 
 
 Basic: `npm install passport express-session body-parser`
 
