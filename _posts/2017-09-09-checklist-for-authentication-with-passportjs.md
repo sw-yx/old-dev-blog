@@ -39,7 +39,8 @@ Table of Contents
 
 In case this gets outdated, here is this tutorial's "package.json":
 
-```
+```javascript
+{
     "axios": "^0.15.0",
     "express": "^4.13.3",
     "express-session": "^1.15.5",
@@ -56,6 +57,7 @@ In case this gets outdated, here is this tutorial's "package.json":
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "sequelize": "^4.4.0",
+    }
 ```
 
 <a name="zero"/>
@@ -109,6 +111,25 @@ app.use(passport.session()); // persistent login sessions
 ```
 
 Note that `cookie-parser` is not needed since express 1.5.0.
+
+Your session by default is only locally stored in memory, which means you will lose all sessions if your server dies. You can use other middleware like `connect-session-sequelize` to put it in a database so it persists.
+
+```javascript
+const session = require('express-session')
+const SequelizeStore = require('connect-session-sequelize')(session.Store)
+const db = require('./db') // connection to the sequelize URI
+const sessionStore = new SequelizeStore({db})
+
+// ...
+
+// session middleware with passport
+  app.use(session({
+    secret: process.env.SESSION_SECRET || 'my best friend is Cody',
+    store: sessionStore, // this is now a sequelize store
+    resave: false,
+    saveUninitialized: false
+  }))
+```
 
 Optionally use `connect-flash` to be able to `req.flash` error messages:
 
