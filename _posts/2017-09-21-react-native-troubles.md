@@ -14,6 +14,12 @@ a list of the problems i faced trying to enable share extensions for an app:
 - <https://github.com/facebook/react-native/issues/8584>
 - <https://stackoverflow.com/questions/33990925/using-react-native-within-an-ios-share-extension/34099070#34099070>
 
+this was the closest i came:
+
+- <https://www.promptworks.com/blog/building-ios-app-extensions-with-react-native> the extension is just blank and i cant get it to show
+- <https://github.com/meedan/react-native-share-menu/blob/master/example/ios/README.md> seems to have decent instructions but ran into terminal issues
+- <https://github.com/alinz/react-native-share-extension> this guy is actually active
+
 direction to/from was also tricky. this was misleading: <https://github.com/EstebanFuentealba/react-native-share>
 
 i also tried and wasted time on infinitered/ignite.
