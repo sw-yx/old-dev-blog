@@ -18,7 +18,7 @@ this was the closest i came:
 
 - <https://www.promptworks.com/blog/building-ios-app-extensions-with-react-native> the extension is just blank and i cant get it to show
 - <https://github.com/meedan/react-native-share-menu/blob/master/example/ios/README.md> seems to have decent instructions but ran into terminal issues
-- <https://github.com/alinz/react-native-share-extension> this guy is actually active
+- <https://github.com/alinz/react-native-share-extension> this guy is actually active but i was not able to get it beyond a blank screen: <https://github.com/alinz/react-native-share-extension/issues/58>
 
 direction to/from was also tricky. this was misleading: <https://github.com/EstebanFuentealba/react-native-share>
 
