@@ -20,6 +20,8 @@ SVRF was an odd beast. It was an instantly entertaining tech demo ([go to this o
 
 # Could be better
 
+## EDIT: people seem to be taking this segment very personally. please don't. criticism/personal take is not "hate". I am a nobody and everyone at techstars has done way more in their time at techstars than I have done in my entire life. I admire every one of them.
+
 Then there were the rest. CottageClass seemed run of the mill. Gather had a great UI but was insufficiently differentiated from existing solutions I am familiar with. Ditto Parakeet. Hawthorne had the best website but is solving a problem no one has. Matchaful is only really worth tracking if you believe matcha will kill coffee. Obsess' CEO was singularly unconvincing, with Vitally a moderately close second. Virgo has great focus but the traction has been extremely disappointing so far. TypeLead was very unusual as an accelerator company but didn't seem all that different from raw Haskell (which I have experience with, working with Neil Mitchell of [Hoogle](https://www.haskell.org/hoogle/) fame for 2 years)
 
 # overall
