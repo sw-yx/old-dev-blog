@@ -10,7 +10,7 @@ I attended the Techstars NY S17 demo day today. [Here is the TC overview of each
 
 # Most interesting
 
-The two most interesting startups were [Geopipe](https://geopi.pe/) and [Phonewagon](https://phonewagon.com/) with honorary mention going to [SVRF](https://www.svrf.com/).
+The two most interesting startups were [Geopipe](https://geopi.pe/) and [Phonewagon](https://phonewagon.com/) ([pitch here](https://techstars.wistia.com/medias/hgpk0rsjmy)) with honorary mention going to [SVRF](https://www.svrf.com/).
 
 Geopipe showed off probably the "deepest" tech which is funny to observe for a tech accelerator program. They combine open and licensed satellite data scans to build 3d models (including texture models eg. they can tell the difference between concrete and glass) and I am aware of how deep of a pain point this is. Their demo failed on demo but they pulled through the presentation decently. On speaking with [Chris (CEO)](https://www.linkedin.com/in/drcmitchell), it was interesting that they had not yet implemented a bunch of the easy web dev wins and were lookign for a part time web dev. I threw my hat in even though I probably can't work for them. I think they are very likely to get acquired at some point down the road.
 
