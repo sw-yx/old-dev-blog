@@ -19,6 +19,8 @@ Resources i am using:
 - <https://www.howtographql.com/graphql-js/1-getting-started/>
 - <https://www.graphql.com/tutorials/>
 - <https://github.com/chentsulin/awesome-graphql>
+- [apollo devtools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm/related?hl=en-US) ([Source](https://github.com/apollographql/apollo-client-devtools))
+
 
 Examples
 - <https://github.com/afram/iceandfire-graphql>
