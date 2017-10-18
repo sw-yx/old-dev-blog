@@ -34,3 +34,18 @@ spelunking
 - get a sense of project planning
 - tangible sense of you as a programmer
 - your past doesnt define your present
+
+coding challenge
+- mid interview
+- takehome project
+- free work/spelunking/meeting deadlines
+- tests
+- time maagement can be tough
+
+logic/reasoning
+- no need for domain knowledge
+
+architecture
+- high level planning - mentioning tools, libraries, entity relationship diagrams (ERDs), UX flows
+- how data flows in application
+- difference between programmer and software engineer
