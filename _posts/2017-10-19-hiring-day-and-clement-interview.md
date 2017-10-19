@@ -8,9 +8,9 @@ title: Hiring Day and Clement interview
 
 I have chats with:
 
-- TripleLift: computer vision Ad Tech. Creative side. 150+ resources
-- TwoSigma:  InvestMgmt co. Very backend tech focused. 
+- TripleLift: <https://www.glassdoor.com/Reviews/TripleLift-Reviews-E922522.htm> <https://www.themuse.com/profiles/triplelift> <https://www.crunchbase.com/organization/triple-lift> mgmt <https://www.linkedin.com/in/kalashnikov/>
+- TwoSigma: <https://www.glassdoor.com/Reviews/Two-Sigma-Reviews-E241045.htm> open source? not saas? tech debt. openness.
 - JP Morgan
-- PDT Partners: PDT Partners is a global investment manager. We develop and deploy quantitative, model-driven strategies to trade liquid assets globally. Composed of a tight-knit community of researchers, technologists, and business professionals, we strive to build one of the best trading firms in the world. We combine the spirit and adaptability of a start-up with the expertise and successful history of an established firm.
-- Digifi:  Digital lending solutions. Cloud based. 15 people
-- Simon Data: Simon is a tool that transforms your data into clear insights that let you get more out of your marketing. Connect your data in minutes, create customized segments, deploy to existing channels, and discover what your customers want.
+- PDT Partners: <https://www.glassdoor.com/Reviews/PDT-Partners-Reviews-E713598.htm>
+- Digifi:  wat.
+- Simon Data: most interesting
