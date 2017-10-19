@@ -8,6 +8,12 @@ title: technical interviewing
 
 today I completed my capstone!! <https://github.com/sw-yx/FSA-GraphQL-of-Thrones> and <https://graphql-of-thrones.herokuapp.com>
 
+I also surveyed my classmates and the results are here: <https://docs.google.com/spreadsheets/d/1bhDd3ZtqwCrPG5hsVcjOdhJ7lyT4sJZHiyKkwnbbUMg/edit#gid=0>. Of note:
+
+- about half of people considering learning a new language picked Python, with C++/C# 2nd and Go 3rd
+- AWS was the top technology to learn with other popular techs pretty much in a dead heat. this was a surprise and highlights people know how impt cloud is
+- leetcode and CTCI were top picks for interview prep.
+
 items:
 
 - algos eg implement mergesort
