@@ -6,6 +6,8 @@ categories: fsa
 title: technical interviewing
 ---
 
+today I completed my capstone!! <https://github.com/sw-yx/FSA-GraphQL-of-Thrones> and <https://graphql-of-thrones.herokuapp.com>
+
 items:
 
 - algos eg implement mergesort
