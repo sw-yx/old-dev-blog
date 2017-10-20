@@ -14,3 +14,7 @@ I have chats with:
 - PDT Partners: <https://www.glassdoor.com/Reviews/PDT-Partners-Reviews-E713598.htm>
 - Digifi:  wat.
 - Simon Data: most interesting
+
+---
+
+clement interview went well. i could always be smoother as a host. <https://docs.google.com/document/d/1ntGgY-SODM6XeW8crb9ZOngUzvbE6853aBE1b4FncCc/edit?usp=sharing>
