@@ -19,3 +19,11 @@ so many little nuggets of interestingness today, none major:
 i am meeting a couple old coworkers tomorrow and the day after and they each have project ideas.
 
 product hunt is also interesting but the parameters are too broad.
+
+---
+
+getting into aws.
+
+i made a new IAM thing with these instructions <https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-setting-up.html>
+
+following this tutorial <https://github.com/coldbrewcloud/tutorial-nodejs>
