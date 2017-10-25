@@ -15,3 +15,7 @@ so many little nuggets of interestingness today, none major:
 - had a fun time at Moat looking at ad time measurement
 - talked about sudoku solving looking at it as an exact cover problem [using dancing links](http://buzzard.ups.edu/talks/beezer-2010-stellenbosch-sudoku.pdf) - js explanation <https://stackoverflow.com/a/10507481/1106414> (More: <https://sudokugarden.de/en/solve/dancing-links>)
 - couple conversations with 2sig and pdt
+
+i am meeting a couple old coworkers tomorrow and the day after and they each have project ideas.
+
+product hunt is also interesting but the parameters are too broad.
