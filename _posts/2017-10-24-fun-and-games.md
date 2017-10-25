@@ -27,3 +27,5 @@ getting into aws.
 i made a new IAM thing with these instructions <https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-setting-up.html>
 
 following this tutorial <https://github.com/coldbrewcloud/tutorial-nodejs>
+
+failed horribly. filed two issues <https://github.com/cefjoeii/mern-crud/issues/6> and <https://github.com/coldbrewcloud/coldbrew-cli/issues/40>
