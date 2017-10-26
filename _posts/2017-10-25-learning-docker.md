@@ -10,3 +10,5 @@ learning docker
 
 - <https://github.com/robrich/docker-hands-on-workshop>
 - <https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b>
+
+not very productive today. got a very interesting opportunity off twitter and hope to secure it tomorrow.
