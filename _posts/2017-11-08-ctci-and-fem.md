@@ -35,3 +35,8 @@ architecture questions
 todo list:
 - longest common subsequence
 - submatrix sum (use [kadane's algorithm](https://www.youtube.com/watch?v=yCQN096CwWM))
+
+
+edit:
+
+with good comments from <https://www.quora.com/How-can-I-get-a-job-at-Facebook-or-Google-in-6-months-I-need-a-concise-work-plan-to-build-a-good-enough-skill-set-Should-I-join-some-other-start-up-or-build-my-own-projects-start-up-Should-I-just-focus-on-practicing-data-structures-and-algorithms/answer/Jimmy-Saade?share=1&srid=TAJ1> and <https://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html>
