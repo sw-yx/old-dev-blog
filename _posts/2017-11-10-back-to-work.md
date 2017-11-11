@@ -14,4 +14,4 @@ That said signing up for FEM has been a great experience so far and there is lot
 
 ---
 
-i started work on a small react duotone component after seeing some inspiration. <https://sw-yx.github.io/react-styled-duotone/demo/>
+i started work on a small react duotone component after seeing some inspiration from [creative tim](https://www.indiehackers.com/@alexpaduraru/60f6221d67). <https://sw-yx.github.io/react-styled-duotone/demo/>
