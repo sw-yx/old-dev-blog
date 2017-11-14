@@ -15,3 +15,7 @@ second, completed [generator](https://docs.feathersjs.com/guides/step-by-step/ge
 ---
 
 third, completed chat app but it wasnt very convincing. checking out [this video presentation to see how feathers and react mix](https://www.youtube.com/watch?v=IOwilPI4LFg&index=1&list=PLwSdIiqnDlf_lb5y1liQK2OW5daXYgKOe)
+
+---
+
+fourth and fifth - digging into pros and cons and writing it up
