@@ -16,4 +16,6 @@ today i start work on hurlbot. mvp is basically:
 
 killed the hurlbot idea, its already done.
 
+I did some G2i work today.
+
 ![g2i demo](https://github.com/g2i/code-challenge-shawn-wang/raw/master/nativeapp/g2iappdemo.gif)
