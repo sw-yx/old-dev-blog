@@ -1,0 +1,85 @@
+---
+layout: post
+date: 2017-11-19
+tags: happy
+categories: react nivo
+title: reviewing react dataviz
+---
+
+Sacha Greif is one of my inspirations in coding+design and he is compiling the State of JS 2017 results here. 
+
+[His preview at NordicJS](https://www.youtube.com/watch?v=FZw1j_tTSag) also dropped a mention on [nivo.rocks](http://nivo.rocks) and that piqued my interest.
+
+I did an interview recently where I needed to pull in a dataviz component and my lack of knowledge around the area cost me a bunch of time in research. Even worse, my eventual choice was so finnicky I never even got the viz up and running in time.
+
+So I mentioned this on twitter to @sxywu, another inspiration: <https://twitter.com/swyx/status/930656969811267584> who also shouted out to vx.
+
+So I decided to try out nivo this weekend and document my journey along the way. I will be writing some instructions for people who are following along but if I had to teach everything it would be a very long post so pardon if I skip some details.
+
+1. Starting off with the react-babel template from Glitch: <https://glitch.com/~react-babel>
+2. add `nivo` and `axios`
+3. we're gonna hit up the SWAPI api for data: <https://swapi.co/documentation#species>
+
+## Hello Bar Chart
+
+The data comes as an array of objects: <https://swapi.co/api/species/?format=json> and we want the species name vs average lifespan. That's the source data.
+
+The [nivo bar example](http://nivo.rocks/#/bar) also wants an array of objects, with a `country` label and a `field: value` situation. alright, can't be too hard.
+
+```javascript
+export default class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {data: []}
+  }
+  componentDidMount() {
+    axios.get('https://swapi.co/api/species/?format=json').then(x => {
+      const parseddata = x.data.results.map(({name, average_lifespan}) => ({name, average_lifespan}))
+      this.setState({data: parseddata})
+    })
+  }
+  render () {
+    return (
+      <div>
+         <Bar
+          data={this.state.data}
+          keys={[
+              "average_lifespan"
+          ]}
+          indexBy="name"
+        />
+      </div>
+    )
+  }
+}
+```
+
+ok. that should work. right?
+
+```
+Warning: Failed prop type: The prop `width` is marked as required in `withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))`, but its value is `undefined`.
+    in withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar))))))))) (created by defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))))
+    in defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))) (created by withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar))))))))))))
+    in withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar))))))))))) (created by defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))))))
+    in defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))))) (created by withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar))))))))))))))
+    in withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar))))))))))))) (created by defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))))))))
+    in defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(defaultProps(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(withPropsOnChange(pure(Bar)))))))))))))) (created by App)
+    in div (created by App)
+    in App
+```
+
+wtf?
+
+[File an issue, move on.](https://github.com/plouc/nivo/issues/89)
+
+After digging through the [nivo docs source code](https://github.com/plouc/nivo-website) i found that they were using a thing called a ResponsiveBar, which is not buggy. swap that out, and it works:
+
+```
+import { ResponsiveBar as Bar } from "nivo";
+```
+
+
+
+
+
+
