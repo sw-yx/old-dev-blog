@@ -14,6 +14,8 @@ I did an interview recently where I needed to pull in a dataviz component and my
 
 So I mentioned this on twitter to @sxywu, another inspiration: <https://twitter.com/swyx/status/930656969811267584> who also shouted out to vx.
 
+# Review of Nivo
+
 So I decided to try out nivo this weekend and document my journey along the way. I will be writing some instructions for people who are following along but if I had to teach everything it would be a very long post so pardon if I skip some details.
 
 1. Starting off with the react-babel template from Glitch: <https://glitch.com/~react-babel>
@@ -74,12 +76,49 @@ wtf?
 
 After digging through the [nivo docs source code](https://github.com/plouc/nivo-website) i found that they were using a thing called a ResponsiveBar, which is not buggy. swap that out, and it works:
 
-```
+```javascript
 import { ResponsiveBar as Bar } from "nivo";
 ```
 
+![image](https://user-images.githubusercontent.com/6764957/32996695-00847258-cd54-11e7-8f32-3ea1b3e71ba8.png)
 
+Alright now to add some labels.
 
+```javascript
+          <Bar
+            data={this.state.data}
+            keys={["average_lifespan"]}
+            indexBy="name"
+            axisBottom={{
+              orient: "bottom",
+              tickSize: 5,
+              tickPadding: 5,
+              tickRotation: 0,
+              legend: "name",
+              legendPosition: "center",
+              legendOffset: 36
+            }}
+            axisLeft={{
+              orient: "left",
+              tickSize: 5,
+              tickPadding: 5,
+              tickRotation: 0,
+              legend: "average_lifespan",
+              legendPosition: "center",
+              legendOffset: -40
+            }}
+          />
+```
 
+this is copied straight from the site. Should be good enough!
 
+![image](https://user-images.githubusercontent.com/6764957/32996695-00847258-cd54-11e7-8f32-3ea1b3e71ba8.png)
 
+nope. this is the worst of all errors, a silent error. at this point i give up, 2 hours in.
+
+the docs look amazing but i think there is too much that is lacking for this to be a mature library. 
+
+Review of Nivo v0.30: 
+
+- Docs: 3/5
+- Functionality: 3/5.
