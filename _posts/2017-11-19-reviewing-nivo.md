@@ -114,7 +114,7 @@ this is copied straight from the site. Should be good enough!
 
 ![image](https://user-images.githubusercontent.com/6764957/32996695-00847258-cd54-11e7-8f32-3ea1b3e71ba8.png)
 
-nope. this is the worst of all errors, a silent error. at this point i give up, 2 hours in.
+nope. this is the worst of all errors, a silent error. at this point i give up, 2 hours in. [Filed the issue](https://github.com/plouc/nivo/issues/90)
 
 the docs look amazing but i think there is too much that is lacking for this to be a mature library. 
 
@@ -122,3 +122,4 @@ Review of Nivo v0.30:
 
 - Docs: 3/5
 - Functionality: 3/5.
+- Beginner friendliness: 1/5
