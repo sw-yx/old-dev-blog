@@ -14,7 +14,7 @@ I did an interview recently where I needed to pull in a dataviz component and my
 
 So I mentioned this on twitter to @sxywu, another inspiration: <https://twitter.com/swyx/status/930656969811267584> who also shouted out to vx.
 
-# Review of Nivo
+# Review of Nivo 0.30
 
 So I decided to try out nivo this weekend and document my journey along the way. I will be writing some instructions for people who are following along but if I had to teach everything it would be a very long post so pardon if I skip some details.
 
