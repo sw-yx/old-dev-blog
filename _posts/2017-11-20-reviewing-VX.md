@@ -264,7 +264,7 @@ I try to add a left axis:
 
 and this fails silently which is no good but I am a bit happier than i was with nivo.
 
-# Review of Nivo v0.30
+# Review of vx v0.0.1
 
 ### Docs: 2/5
 
