@@ -3,7 +3,7 @@ layout: post
 date: 2017-11-19
 tags: happy
 categories: react nivo
-title: reviewing react dataviz: Nivo
+title: reviewing react dataviz - Nivo
 ---
 
 Sacha Greif is one of my inspirations in coding+design and he is compiling the State of JS 2017 results here. 
@@ -118,7 +118,7 @@ nope. this is the worst of all errors, a silent error. at this point i give up, 
 
 the docs look amazing but i think there is too much that is lacking for this to be a mature library. 
 
-Review of Nivo v0.30: 
+# Review of Nivo v0.30
 
 - Docs: 2/5. the docs bias towards power users and don't have basic examples before building up to bigger things. for example there is no Getting Started. also some evidence suggesting that the API is out of date.
 - Functionality: 3/5. it looks like it has a lot of things that could be useful, including animation.
