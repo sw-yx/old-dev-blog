@@ -251,7 +251,7 @@ awesome!
 
 I try to add a left axis:
 
-```
+```javascript
 <AxisLeft
   scale={yScale}
   top={0}
