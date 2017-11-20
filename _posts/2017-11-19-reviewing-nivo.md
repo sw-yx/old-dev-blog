@@ -120,8 +120,16 @@ the docs look amazing but i think there is too much that is lacking for this to 
 
 # Review of Nivo v0.30
 
-- Docs: 2/5. the docs bias towards power users and don't have basic examples before building up to bigger things. for example there is no Getting Started. also some evidence suggesting that the API is out of date.
-- Functionality: 3/5. it looks like it has a lot of things that could be useful, including animation.
-- Beginner friendliness: 1/5 see above.
+### Docs: 2/5
+
+the docs bias towards power users and don't have basic examples before building up to bigger things. for example there is no Getting Started. also some evidence suggesting that the API is out of date.
+
+### Functionality: 3/5
+
+it looks like it has a lot of things that could be useful, including animation.
+
+### Beginner friendliness
+
+1/5 see above.
 
 this is pre v1 so of course expectations are low.
