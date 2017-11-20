@@ -3,7 +3,7 @@ layout: post
 date: 2017-11-19
 tags: happy
 categories: react nivo
-title: reviewing react dataviz
+title: reviewing react dataviz: Nivo
 ---
 
 Sacha Greif is one of my inspirations in coding+design and he is compiling the State of JS 2017 results here. 
