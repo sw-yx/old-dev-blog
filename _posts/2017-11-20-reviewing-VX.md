@@ -6,7 +6,7 @@ categories: react-review vx
 title: reviewing vx
 ---
 
-@sxywu is another of my inspirations and mentioned that i should check out vx <Jhttps://twitter.com/swyx/status/930656969811267584>
+@sxywu is another of my inspirations and mentioned that i should check out vx <https://twitter.com/swyx/status/930656969811267584>
 
 and the creator @hshoff dropped by to say hi so i am very happy about that.
 
