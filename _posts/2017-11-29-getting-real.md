@@ -13,3 +13,8 @@ i am going to do more work in ML. in general my emerging priorities are:
 - react review
 - halite ML
 - the worthwhile project
+
+
+---
+
+finished week 2 of coursera course. phew.
