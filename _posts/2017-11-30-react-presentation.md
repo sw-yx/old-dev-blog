@@ -45,4 +45,4 @@ this could be you
 
 ---
 
-another 3 hours, another week down
+another 3 hours, another coursera machine learning week down
