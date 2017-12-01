@@ -42,3 +42,7 @@ content points
 this could be you
 
 - <https://twitter.com/acdlite/status/769272685209669632>
+
+---
+
+another 3 hours, another week down
