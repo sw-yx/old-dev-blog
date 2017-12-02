@@ -34,6 +34,26 @@ Faas Pricing COst = Compute time + Invocations + Network
 Unit of measure - GB-second = 1 second with 1 GB of memory provisioned. cost on lambda is $0.000001667.
 AWS lambda free tier invocations 1m, compute time 400k gbs, invocations 0.2/million, compute time 0.000001667.
 
+Deployment options
+- serverless framework
+- architecht
+- aws serverless application model
+- claudiajs (node)
+- chalice (python, aws)
+- zappa (python)
+
+things to check out
+- servers.lol
+
+integrate operations into development model - think about what kind of observability you want
+
+CHallenges
+- managing state
+- orchestration
+- operations in a noops world
+- testing
+- networking
+
 
 
 ---
