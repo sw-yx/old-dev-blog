@@ -3,7 +3,7 @@ layout: post
 date: 2017-12-12
 tags: happy
 categories: algo
-title: gogl2 and more
+title: gogl2 and preact
 ---
 
 gogl2 was today.
@@ -29,3 +29,8 @@ corner case - what if your adjustments at the end cause upstream conflicts
 boris - server log max usage
 
 given incoming stream of server jobs with overlapping start and end times as well as ram allocation, find peak ram allocation.
+
+
+---
+
+spent some time on preact. <https://preactjs.com/guide/differences-to-react>
